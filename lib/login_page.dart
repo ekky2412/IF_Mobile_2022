@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:praktikum_mobile_2022_plug_e/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -81,11 +82,15 @@ class _LoginPageState extends State<LoginPage> {
         ),
         onPressed: () {
           String pesan = "";
-          if (username == "dani" && password == "fathur") {
+          if (password == "fathur") {
             setState(() {
               pesan = "Login Success";
               isLoginSuccess = true;
             });
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => HomePage(username: username)));
           } else {
             setState(() {
               pesan = "Login Failed";

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:praktikum_mobile_2022_plug_e/main_screen.dart';
 import 'login_page.dart';
 
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: MainScreen(),
     );
   }
   // Widget app_interface() {
