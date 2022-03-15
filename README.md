@@ -1,4 +1,4 @@
-# praktikum_mobile_2022_plug_e
+# praktikum_mobile_2022
 
 A new Flutter application.
 
