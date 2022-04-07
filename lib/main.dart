@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:praktikum_mobile_2022_plug_e/main_screen.dart';
+import 'image_picker/image_picker_section.dart';
 import 'login_page.dart';
 
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainScreen(),
+      home: ImagePickerSection(),
     );
   }
   // Widget app_interface() {
