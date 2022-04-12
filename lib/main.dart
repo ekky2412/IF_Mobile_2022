@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_b/feature/navigation_data/main_screen.dart';
-
-import 'feature/navigation_data/login_page.dart';
+import 'package:mobile_b/feature/module_5/image_picker/image_picker_section.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginPage(),
+      home: ImagePickerSection(),
     );
   }
 

@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import '../../tools/common_submit_button.dart';
+import 'package:mobile_b/tools/common_submit_button.dart';
 import 'image_picker_helper.dart';
 
 class ImagePickerSection extends StatefulWidget {

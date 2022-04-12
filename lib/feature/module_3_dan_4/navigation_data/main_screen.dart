@@ -1,5 +1,4 @@
-import 'package:mobile_b/feature/navigation_data/home_page.dart';
-
+import 'home_page.dart';
 import 'tourism_place.dart';
 import 'package:flutter/material.dart';
 
