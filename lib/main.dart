@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_b/main_screen.dart';
+import 'package:mobile_b/feature/quiz/main_screen.dart';
 
-import 'login_page.dart';
+import 'feature/navigation_data/login_page.dart';
 
 void main() {
   runApp(const MyApp());

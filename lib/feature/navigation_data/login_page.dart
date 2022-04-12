@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_b/home_page.dart';
+import 'package:mobile_b/feature/navigation_data/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key? key}) : super(key: key);
