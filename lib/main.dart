@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:mobile_b/feature/module_5/image_picker/image_picker_section.dart';
+import 'package:mobile_b/feature/module_6/homepage.dart';
+import 'package:mobile_b/model/contact_list_model.dart';
 
-void main() {
+void main() async{
+  initiateLocalDB();
   runApp(const MyApp());
+}
+
+void initiateLocalDB() async {
+  await Hive.initFlutter();
+  Hive.registerAdapter(ContactListModelAdapter());
+  await Hive.openBox<ContactListModel>("contact_list");
 }
 
 class MyApp extends StatelessWidget {
@@ -11,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ImagePickerSection(),
+      home: HomePage(),
     );
   }
 
