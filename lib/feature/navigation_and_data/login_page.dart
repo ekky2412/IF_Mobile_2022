@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_mobile_2022_plug_e/home_page.dart';
+import 'package:praktikum_mobile_2022_plug_e/feature/navigation_and_data/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);

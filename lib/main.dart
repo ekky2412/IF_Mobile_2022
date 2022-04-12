@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_mobile_2022_plug_e/main_screen.dart';
-import 'image_picker/image_picker_section.dart';
-import 'login_page.dart';
+import 'package:praktikum_mobile_2022_plug_e/feature/navigation_and_data/main_screen.dart';
+import 'feature/image_picker/image_picker_section.dart';
+import 'feature/navigation_and_data/login_page.dart';
 
 
 void main() {
