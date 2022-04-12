@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_b/feature/quiz/main_screen.dart';
+import 'package:mobile_b/feature/navigation_data/main_screen.dart';
 
 import 'feature/navigation_data/login_page.dart';
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MainScreen(),
+      home: LoginPage(),
     );
   }
 
