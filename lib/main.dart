@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:praktikum_mobile_2022_plug_e/feature/module_3_dan_4/navigation_and_data/home_page.dart';
+import 'package:praktikum_mobile_2022_plug_e/feature/module_6/homepage.dart';
+import 'package:praktikum_mobile_2022_plug_e/model/contact_list_model.dart';
 
 import 'feature/module_5/image_picker/image_picker_section.dart';
 
 
-void main() {
+void main() async {
+  initiateLocalDB();
   runApp(const MyApp());
+}
+
+void initiateLocalDB() async{
+  await Hive.initFlutter();
+  Hive.registerAdapter(ContactListModelAdapter());
+  await Hive.openBox<ContactListModel>("contact_list");
 }
 
 class MyApp extends StatelessWidget {
@@ -14,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ImagePickerSection(),
+      home: HomePageHome(),
     );
   }
   // Widget app_interface() {
